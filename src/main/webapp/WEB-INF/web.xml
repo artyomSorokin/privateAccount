@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" version="3.0">
+  <display-name>MySimpleWebApp</display-name>
+  <servlet>
+    <servlet-name>LoginController</servlet-name>
+    <servlet-class>net.sorokin.controller.LoginController
+    </servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>RegistrationController</servlet-name>
+    <servlet-class>net.sorokin.controller.RegistrationController
+    </servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>LogoutController</servlet-name>
+    <servlet-class>net.sorokin.controller.LogoutController
+    </servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>UploadController</servlet-name>
+    <servlet-class>net.sorokin.controller.UploadController
+    </servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>ImageController</servlet-name>
+    <servlet-class>net.sorokin.controller.ImageController
+    </servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>AccountController</servlet-name>
+    <servlet-class>net.sorokin.controller.AccountController
+    </servlet-class>
+  </servlet>
+
+
+  <servlet-mapping>
+    <servlet-name>LoginController</servlet-name>
+    <url-pattern>/login</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>RegistrationController</servlet-name>
+    <url-pattern>/RegistrationController</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>LogoutController</servlet-name>
+    <url-pattern>/logout</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>UploadController</servlet-name>
+    <url-pattern>/upload</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ImageController</servlet-name>
+    <url-pattern>/image</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AccountController</servlet-name>
+    <url-pattern>/account</url-pattern>
+  </servlet-mapping>
+
+
+
+  <session-config>
+    <session-timeout>180</session-timeout>
+  </session-config>
+
+  <welcome-file-list>
+    <welcome-file>login.jsp</welcome-file>
+  </welcome-file-list>
+
+</web-app>
+
+
